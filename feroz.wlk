@@ -17,7 +17,7 @@ object feroz {
         pesoDelLobo = 10
     }
 
-    method aunmentoDePeso(elemento){
+    method aumentoDePeso(elemento){
         pesoDelLobo = pesoDelLobo + (elemento *0.10)
     }
 
