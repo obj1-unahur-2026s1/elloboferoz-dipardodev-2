@@ -1,14 +1,25 @@
-import elementos.*
+// caperucita.wlk
+// caperucita.wlk
+// caperucita.wlk
+
 
 object caperucita {
     var pesoCaperucita = 60
-    var manzanas = 0
-    const pesoAbuela = 60
-    method pesoConElementos(){
-        pesoCaperucita += elementos.pesoCanasta(manzanas)
+
+
+    method sumarPeso(elemento){
+        pesoCaperucita += elemento.peso()
     }
 
-    method sumarManzanas(elemento){
-        manzanas += manzanas + elemento
+
+    method restarPeso(elemento){
+        pesoCaperucita -= elemento.peso()
     }
+
+    method peso(){
+        return pesoCaperucita
+    }
+    
+     
+    
 }
